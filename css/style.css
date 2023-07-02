@@ -48,12 +48,6 @@ label {
   font-size: 18px;
 }
 
-li {
-  font-size: 20px;
-  text-align: justify;
-  padding: 0px 5px;
-}
-
 header {
   background-color: #391e4c;
   position: sticky;
@@ -64,11 +58,15 @@ header {
   gap: 20px;
 }
 
-header img {
-  height: 100%;
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li img {
+  height: 150px;
   float: left;
 }
-nav {
+header nav ul {
   height: 100%;
   margin-left: -10px;
   text-align: center;
@@ -79,12 +77,12 @@ nav {
   gap: 5px;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none;
   padding: 10px;
 }
 
-nav a:hover {
+nav ul li a:hover {
   color: #c89e52;
   text-shadow: 0px 0px 2px #c89e52;
 }
@@ -182,6 +180,12 @@ footer img {
   object-fit: cover;
   width: 650px;
   height: 300px;
+}
+
+.listaev {
+  font-size: 20px;
+  text-align: justify;
+  padding: 0px 5px;
 }
 
 .eventosec {
