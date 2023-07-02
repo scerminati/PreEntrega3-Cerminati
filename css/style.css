@@ -1,0 +1,351 @@
+/*Aplicado a todo el sitio*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: #614b70;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  text-align: center;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+p,
+label {
+  text-align: justify;
+  padding: 5px 15px;
+}
+
+p {
+  font-size: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+li {
+  font-size: 20px;
+  text-align: justify;
+  padding: 0px 5px;
+}
+
+header {
+  background-color: #391e4c;
+  position: sticky;
+  top: 0;
+  font-size: 30px;
+  height: 150px;
+  z-index: 3;
+  gap: 20px;
+}
+
+header img {
+  height: 100%;
+  float: left;
+}
+nav {
+  height: 100%;
+  margin-left: -10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #c89e52;
+  text-shadow: 0px 0px 2px #c89e52;
+}
+
+.linkactivo {
+  color: #c89e52;
+  text-shadow: 0px 0px 2px #c89e52;
+}
+
+footer {
+  background-color: #391e4c;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 30px;
+  z-index: 3;
+  margin-top: auto;
+}
+
+.bloquefooter {
+  align-items: center;
+  display: flex;
+}
+
+footer p {
+  font-size: 15px;
+  display: inline-block;
+}
+
+footer img {
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/*Aplicado a index*/
+
+.indeximg {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.indexglobal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100% 10%;
+  grid-template-areas: "textoindex imagenes" "lema lema";
+  column-gap: 20px;
+}
+
+.seccionindex1 {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-area: textoindex;
+  background-color: gray;
+}
+
+.seccionindex2 {
+  grid-area: imagenes;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.lema {
+  grid-area: lema;
+}
+
+.indeximg1 {
+  z-index: 2;
+  margin: 20px 25px;
+  position: relative;
+}
+
+.indeximg2 {
+  z-index: 1;
+  margin: 20px 25px;
+  margin-left: 250px;
+  margin-top: -230px;
+  position: relative;
+  float: right;
+}
+/*Aplicado a Eventos*/
+
+.imgevento {
+  object-fit: cover;
+  width: 650px;
+  height: 300px;
+}
+
+.eventosec {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+
+/*Aplicado a PyS*/
+
+.titulopys {
+  font-weight: bold;
+}
+
+.textoizq {
+  text-align: left;
+}
+
+.textoder {
+  text-align: right;
+}
+
+.textocen {
+  text-align: center;
+}
+
+.sectextopys {
+  position: relative;
+  z-index: 2;
+}
+
+.sectextopys1 {
+  margin-left: -150px;
+  padding-right: 80px;
+}
+
+.sectextopys2 {
+  margin-right: -150px;
+  padding-left: 80px;
+}
+
+.secglobalpys {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+.imgpys {
+  object-fit: cover;
+  width: 800px;
+  height: 800px;
+  border-radius: 100%;
+  opacity: 70%;
+  position: relative;
+  z-index: 1;
+}
+
+.imgpys1 {
+  margin-left: -400px;
+}
+
+.imgpys2 {
+  margin-right: -400px;
+}
+
+/*Tener en cuenta que cuanto más contenido hay en productos, hay que bajarle este margin para que no queden pegados.*/
+/* .pysserv {
+  margin-top: -100px;
+} */
+
+/*Aplica a galería*/
+
+.galerflex {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.fotog {
+  width: 300px;
+  height: 300px;
+  border-radius: 60px;
+  object-fit: cover;
+}
+
+/*Aplicado a contacto*/
+
+.contactglobal {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.formulario {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formtext {
+  width: 40%;
+  float: left;
+}
+.forminput {
+  width: 60%;
+}
+
+form input,
+form textarea {
+  background-color: #d9d9d9;
+  padding: 5px;
+  color: black;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+form textarea {
+  width: 80%;
+}
+
+.contactosec1 {
+  background-color: #391e4c;
+  padding: 10px;
+  width: 45%;
+  margin: 10px 20px;
+  border-radius: 60px;
+}
+
+.contactosec2 {
+  padding: 10px;
+  width: 45%;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  background-color: #614b70;
+  font-size: 20px;
+  margin: 0px 60px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c89e52;
+}
+
+.botonera {
+  text-align: center;
+}
+
+.linea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
