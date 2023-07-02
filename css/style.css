@@ -62,10 +62,15 @@ header nav ul li {
   list-style-type: none;
 }
 
-header nav ul li img {
+.logo {
   height: 150px;
   float: left;
 }
+
+.logo:hover {
+  filter: drop-shadow(0px 0px 5px white);
+} 
+
 header nav ul {
   height: 100%;
   margin-left: -10px;
@@ -101,7 +106,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 30px;
+  padding: 0px 20px;
   z-index: 3;
   margin-top: auto;
 }
@@ -116,11 +121,11 @@ footer p {
   display: inline-block;
 }
 
-footer img {
-  height: 50px;
-  margin-left: 5px;
-  margin-right: 5px;
+.iconofooter {
+  font-size: 50px;
+  margin: 0 2px;
 }
+
 
 /*Aplicado a index*/
 
@@ -239,8 +244,8 @@ footer img {
 
 .imgpys {
   object-fit: cover;
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   border-radius: 100%;
   opacity: 70%;
   position: relative;
@@ -248,11 +253,11 @@ footer img {
 }
 
 .imgpys1 {
-  margin-left: -400px;
+  margin-left: -350px;
 }
 
 .imgpys2 {
-  margin-right: -400px;
+  margin-right: -350px;
 }
 
 /*Tener en cuenta que cuanto más contenido hay en productos, hay que bajarle este margin para que no queden pegados.*/
