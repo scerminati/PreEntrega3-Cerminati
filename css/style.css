@@ -244,10 +244,11 @@ footer p {
   height: 300px;
 }
 
-.listaev {
+.listaev li{
   font-size: 20px;
   text-align: justify;
   padding: 0px 5px;
+  overflow: visible;
 }
 
 .eventosec {
