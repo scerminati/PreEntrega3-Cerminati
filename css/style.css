@@ -36,7 +36,7 @@ header {
   background-color: #391e4c;
   position: sticky;
   top: 0;
-  font-size: 24px;
+  font-size: 2vw;
   height: 18vh;
   display: block;
   z-index: 3;
@@ -63,22 +63,26 @@ footer {
 
 h1 {
   font-family: "Great Vibes", cursive;
-  font-size: 60px;
+  font-size: 4rem;
   text-align: center;
   padding: 15px;
 }
 
 h2 {
   font-family: "Great Vibes", cursive;
-  font-size: 3.5em;
+  font-size: 3.5rem;
   text-align: center;
   padding: 10px;
 }
 
 h3 {
   font-family: "Great Vibes", cursive;
-  font-size: 30px;
+  font-size: 2rem;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 p,
@@ -88,11 +92,11 @@ label {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.4rem;
 }
 
 label {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .logo {
@@ -123,7 +127,6 @@ header nav ul {
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
   padding: 0 5px;
 }
@@ -149,7 +152,7 @@ header nav ul li {
 #menu,
 label.menu {
   display: none;
-  font-size: 50px;
+  font-size: 3em;
 }
 
 .listamenuesc {
@@ -175,7 +178,7 @@ label.menu {
 }
 
 .footertext {
-  font-size: 15px;
+  font-size: 0.77em;
   height: 100%;
 }
 
@@ -185,8 +188,11 @@ footer p {
 }
 
 .iconofooter {
-  font-size: 38px;
+  font-size: 4vh;
+  min-height: 5vh;
   margin: 0 2px;
+  display: flex;
+  align-items: center;
 }
 
 /*Aplicado a index*/
@@ -248,7 +254,7 @@ footer p {
 }
 
 .listaev li {
-  font-size: 20px;
+  font-size: 1.4em;
   text-align: justify;
   padding: 0px 5px;
 }
@@ -373,7 +379,7 @@ form textarea {
   color: black;
   margin: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 form textarea {
@@ -400,7 +406,7 @@ button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 5px;
   background-color: #614b70;
-  font-size: 20px;
+  font-size: 1.2em;
   margin: 0px 60px;
   cursor: pointer;
 }
@@ -422,49 +428,20 @@ button:hover {
 /* Media Queries para pantallas Large */
 
 @media screen and (max-width: 992px) {
-  header {
-    font-size: 18px;
-    gap: 5px;
-    overflow: visible;
-  }
-  .logo {
-    margin-left: 0;
-  }
-
-  .footertext {
-    font-size: 12px;
-  }
-
-  .iconofooter {
-    font-size: 25px;
-  }
 }
 
-/* Media Queries para pantallas Medium */
+/* Media Queries para pantallas Medium + Small + menú hamburguesa */
 
 @media screen and (max-width: 768px) {
-  header {
-    font-size: 14px;
-    padding: 0 4px;
-  }
-  .footertext {
-    font-size: 10px;
-  }
-  .flexfooter {
-    padding: 0;
-  }
-  .iconofooter {
-    font-size: 15px;
-  }
-}
-
-/* Media Queries para pantallas Small y menú hamburguesa */
-
-@media screen and (max-width: 576px) {
   #menu,
   label.menu {
     display: inline-block;
     cursor: pointer;
+  }
+
+  header {
+    overflow: visible;
+    font-size: 1.4rem;
   }
 
   header nav {
@@ -489,7 +466,7 @@ button:hover {
     height: 77vh;
     justify-content: space-around;
     align-items: center;
-    font-size: 25px;
+    font-size: 1.5rem;
     z-index: 3;
     padding: 18px;
   }
@@ -498,24 +475,25 @@ button:hover {
     padding: 0;
     height: 80px;
     display: flex;
-    font-size: 15px;
+    font-size: 1rem;
     flex-direction: column;
     justify-content: space-evenly;
   }
 
   .listamenuesc i {
-    font-size: 50px;
+    font-size: 3.5rem;
+    margin: 0 2px;
   }
+
+  .listamenuescico {
+    display: flex;
+  flex-direction: row;}
 
   #menu:checked ~ .menuhamburguesa {
     display: flex;
   }
-  .footertext {
-    font-size: 15px;
-  }
 
   .flexfooter {
-    font-size: 10px;
     justify-content: center;
   }
 
