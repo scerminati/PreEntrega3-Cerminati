@@ -48,6 +48,7 @@ main {
   min-height: 77vh;
   height: 77vh;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 footer {
@@ -89,14 +90,7 @@ p,
 label {
   text-align: justify;
   padding: 5px 15px;
-}
-
-p {
   font-size: 1.4rem;
-}
-
-label {
-  font-size: 1.2rem;
 }
 
 .logo {
@@ -131,7 +125,8 @@ nav ul li a {
   padding: 0 5px;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+i:hover {
   color: #c89e52;
   text-shadow: 0px 0px 2px #c89e52;
 }
@@ -152,11 +147,15 @@ header nav ul li {
 #menu,
 label.menu {
   display: none;
-  font-size: 3em;
+  font-size: 4rem;
 }
 
 .listamenuesc {
   display: none;
+}
+
+.listamenuesc i {
+  font-size: 4.5rem;
 }
 
 /* Relativo al footer */
@@ -198,56 +197,29 @@ footer p {
 /*Aplicado a index*/
 
 .indeximg {
-  width: 320px;
-  height: 320px;
+  width: 75%;
   object-fit: cover;
   border-radius: 100%;
-}
-.indexglobal {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 100% 10%;
-  grid-template-areas: "textoindex imagenes" "lema lema";
-  column-gap: 20px;
-}
-
-.seccionindex1 {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  grid-area: textoindex;
-}
-
-.seccionindex2 {
-  grid-area: imagenes;
-  align-items: center;
-  justify-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.lema {
-  grid-area: lema;
+  max-width: 350px;
 }
 
 .indeximg1 {
   z-index: 2;
-  margin: 20px 25px;
-  position: relative;
+  margin-left: -150px;
+  margin-bottom: -150px;
 }
 
 .indeximg2 {
   z-index: 1;
-  margin: 20px 25px;
-  margin-left: 250px;
-  margin-top: -230px;
-  position: relative;
-  float: right;
+  margin-left: 150px;
 }
 
 .indexplanimg {
-  width: 80%;
+  width: 100%;
+}
+
+.break {
+  width: 60%;
 }
 
 /*Aplicado a Eventos*/
@@ -430,36 +402,18 @@ button:hover {
   align-items: center;
 }
 
-/* Media Queries para pantallas Large */
-
-@media screen and (max-width: 992px) {
-}
-
 /* Media Queries para pantallas Medium + Small + menú hamburguesa */
 
 @media screen and (max-width: 768px) {
-  #menu,
-  label.menu {
-    display: inline-block;
-    cursor: pointer;
-  }
-
   header {
     overflow: visible;
-    font-size: 1.4rem;
   }
-
-p {font-size: 1rem;}
 
   header nav {
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
     align-items: center;
-  }
-
-  .logo {
-    height: 18vh;
   }
 
   .menuhamburguesa {
@@ -473,32 +427,33 @@ p {font-size: 1rem;}
     height: 77vh;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     z-index: 3;
     padding: 18px;
   }
 
-  .listamenuesc {
-    padding: 0;
-    height: 80px;
-    display: flex;
-    font-size: 1rem;
-    flex-direction: column;
-    justify-content: space-evenly;
+  .logo {
+    height: 18vh;
   }
 
-  .listamenuesc i {
-    font-size: 3.5rem;
-    margin: 0 2px;
-  }
-
-  .listamenuescico {
-    display: flex;
-    flex-direction: row;
+  #menu,
+  label.menu {
+    display: inline-block;
+    cursor: pointer;
   }
 
   #menu:checked ~ .menuhamburguesa {
     display: flex;
+  }
+
+  .listamenuesc {
+    display: visible;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .flexfooter {
@@ -507,5 +462,24 @@ p {font-size: 1rem;}
 
   .footerulhidden {
     display: none;
+  }
+
+  /* Cambios de tamaño de fuente */
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  p,
+  label {
+    font-size: 1rem;
   }
 }
