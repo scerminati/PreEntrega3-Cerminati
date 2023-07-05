@@ -245,6 +245,11 @@ footer p {
   position: relative;
   float: right;
 }
+
+.indexplanimg {
+  width: 80%;
+}
+
 /*Aplicado a Eventos*/
 
 .imgevento {
@@ -444,6 +449,8 @@ button:hover {
     font-size: 1.4rem;
   }
 
+p {font-size: 1rem;}
+
   header nav {
     display: flex;
     justify-content: space-between;
@@ -487,7 +494,8 @@ button:hover {
 
   .listamenuescico {
     display: flex;
-  flex-direction: row;}
+    flex-direction: row;
+  }
 
   #menu:checked ~ .menuhamburguesa {
     display: flex;
