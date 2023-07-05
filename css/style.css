@@ -6,7 +6,6 @@
   margin: 0px;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow: hidden;
 }
 
 /* Scrollbar para main */
@@ -26,9 +25,11 @@
 
 body {
   background-color: #614b70;
+  height: 100vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 header {
@@ -40,6 +41,7 @@ header {
   display: block;
   z-index: 3;
   gap: 20px;
+  overflow: hidden;
 }
 
 main {
@@ -56,6 +58,7 @@ footer {
   display: block;
   z-index: 3;
   height: 5vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -67,7 +70,7 @@ h1 {
 
 h2 {
   font-family: "Great Vibes", cursive;
-  font-size: 50px;
+  font-size: 3.5em;
   text-align: center;
   padding: 10px;
 }
@@ -244,11 +247,10 @@ footer p {
   height: 300px;
 }
 
-.listaev li{
+.listaev li {
   font-size: 20px;
   text-align: justify;
   padding: 0px 5px;
-  overflow: visible;
 }
 
 .eventosec {
