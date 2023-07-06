@@ -31,7 +31,9 @@ body {
   flex-direction: column;
 }
 
-main {overflow-x:hidden;}
+main {
+  overflow-x: hidden;
+}
 
 header {
   background-color: #391e4c;
@@ -447,11 +449,13 @@ form textarea {
     font-size: 1.7rem;
   }
 
-  p{
+  p {
     font-size: 1rem;
   }
 
-  label{font-size: 0.9rem;}
+  label {
+    font-size: 0.9rem;
+  }
 
   /* Lista en evento, cambio de fuente */
   .listaev li {
