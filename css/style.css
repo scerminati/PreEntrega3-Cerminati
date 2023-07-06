@@ -307,11 +307,6 @@ footer p {
 
 /*Aplicado a contacto*/
 
-.contactglobal {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
 
 .formulario {
   display: flex;
@@ -345,19 +340,11 @@ form textarea {
 .contactosec1 {
   background-color: #391e4c;
   padding: 10px;
-  width: 45%;
-  margin: 10px 20px;
   border-radius: 60px;
 }
 
-.contactosec2 {
-  padding: 10px;
-  width: 45%;
-  margin: 10px 20px;
-  text-align: center;
-}
 
-/* button {
+.contactobut {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 5px;
@@ -367,9 +354,9 @@ form textarea {
   cursor: pointer;
 }
 
-button:hover {
+.contactobut:hover {
   background-color: #c89e52;
-} */
+}
 
 .botonera {
   text-align: center;
