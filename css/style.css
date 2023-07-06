@@ -31,6 +31,8 @@ body {
   flex-direction: column;
 }
 
+main {overflow-x:hidden;}
+
 header {
   background-color: #391e4c;
   position: sticky;
@@ -445,10 +447,11 @@ form textarea {
     font-size: 1.7rem;
   }
 
-  p,
-  label {
+  p{
     font-size: 1rem;
   }
+
+  label{font-size: 0.9rem;}
 
   /* Lista en evento, cambio de fuente */
   .listaev li {
