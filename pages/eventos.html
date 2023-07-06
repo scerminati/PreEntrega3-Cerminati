@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../media/favicon.png" />
-        <!-- Bootstrap -->
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-        crossorigin="anonymous"
-      />
-    
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,48 +74,96 @@
     <!-- Inicio de main -->
     <main>
       <h1>Eventos</h1>
-      <section class="eventosec">
-        <h2>Sociales</h2>
-        <ul class="listaev">
-          <li>XV</li>
-          <li>Sweet Sixteen</li>
-          <li>BODAS / Wedding Planner</li>
-          <li>Egresos</li>
-          <li>Aniversarios</li>
-          <li>Cumpleaños</li>
-          <li>Festivales</li>
-          <li>Más celebraciones</li>
-        </ul>
-        <img
-          src="../media/eventos1.jpg"
-          atl="Evento de boda"
-          class="imgevento"
-        />
-      </section>
+      <section class="container">
+        <div class="row d-flex align-items-center p-2">
+          <div class="col-lg-3 col-md-5 col-sm-12"><h2>Sociales</h2></div>
+          <div class="col-lg-3 col-md-7 col-sm-12">
+            <ul class="listaev">
+              <li>XV</li>
+              <li>Sweet Sixteen</li>
+              <li>BODAS / Wedding Planner</li>
+              <li>Egresos</li>
+              <li>Aniversarios</li>
+              <li>Cumpleaños</li>
+              <li>Festivales</li>
+              <li>Más celebraciones</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../media/eventos1.jpg"
+                    class="d-block w-100 imgevento"
+                    alt="Boda"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../media/eventos1-2.png"
+                    class="d-block w-100 imgevento"
+                    alt="Mesa de fiesta"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../media/eventos1-3.jpg"
+                    class="d-block w-100 imgevento"
+                    alt="Cumpleaños 18"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <section class="eventosec">
-        <img
-          src="../media/eventos2.jpg"
-          atl="Evento corporativo"
-          class="imgevento"
-        />
-        <h2>Corporativo</h2>
-        <ul class="listaev">
-          <li>Institucionales</li>
-          <li>Celebraciones</li>
-          <li>Reuniones / Capacitaciones</li>
-          <li>Convenciones</li>
-          <li>Webinar</li>
-          <li>Expo</li>
-          <li>Lanzamiento de Productos</li>
-        </ul>
+        <div class="row d-flex align-items-center p-2">
+          <div class="col-lg-3 col-md-5 col-sm-12 order-lg-2">
+            <h2>Corporativo</h2>
+          </div>
+          <div class="col-lg-3 col-md-7 col-sm-12 order-lg-3">
+            <ul class="listaev">
+              <li>Institucionales</li>
+              <li>Celebraciones</li>
+              <li>Reuniones / Capacitaciones</li>
+              <li>Convenciones</li>
+              <li>Webinar</li>
+              <li>Expo</li>
+              <li>Lanzamiento de Productos</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 order-lg-1">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../media/eventos2.jpg" class="d-block w-100 imgevento" alt="Capacitación" />
+                </div>
+                <div class="carousel-item">
+                  <img src="../media/eventos2-2.png" class="d-block w-100 imgevento" alt="Convención" />
+                </div>
+                <div class="carousel-item">
+                  <img src="../media/eventos2-3.jpg" class="d-block w-100 imgevento" alt="Expo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- Fin de main -->
     <!-- Inicio de footer -->
     <footer class="flexfooter">
       <p class="footertext">Frenesí © 2023 - Comodoro Rivadavia, Argentina.</p>
-      <ul class=" footertext footerulhidden">
+      <ul class="footertext footerulhidden">
         <li>Encontranos en nuestras redes sociales:</li>
         <li>
           <a href="http://www.facebook.com" target="_blank"

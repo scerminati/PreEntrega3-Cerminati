@@ -90,7 +90,7 @@ p,
 label {
   text-align: justify;
   padding: 5px 15px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .logo {
@@ -231,17 +231,8 @@ footer p {
 }
 
 .listaev li {
-  font-size: 1.4em;
-  text-align: justify;
+  font-size: 1.2em;
   padding: 0px 5px;
-}
-
-.eventosec {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0px 100px;
 }
 
 /*Aplicado a PyS*/
@@ -481,5 +472,10 @@ button:hover {
   p,
   label {
     font-size: 1rem;
+  }
+
+  /* Lista en evento, cambio de fuente */
+  .listaev li {
+    font-size: 1em;
   }
 }

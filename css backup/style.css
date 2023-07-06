@@ -1,0 +1,485 @@
+/*Aplicado a todo el sitio*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Scrollbar para main */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #391e4c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #614b70;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  background-color: #391e4c;
+  position: sticky;
+  top: 0;
+  font-size: 2vw;
+  height: 18vh;
+  display: block;
+  z-index: 3;
+  gap: 20px;
+  overflow: hidden;
+}
+
+main {
+  min-height: 77vh;
+  height: 77vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+footer {
+  background-color: #391e4c;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  z-index: 3;
+  height: 5vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  text-align: center;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+label {
+  text-align: justify;
+  padding: 5px 15px;
+  font-size: 1.4rem;
+}
+
+.logo {
+  height: 100%;
+  float: left;
+  margin-left: 20px;
+  align-self: center;
+}
+
+.logo:hover {
+  filter: drop-shadow(0px 0px 5px white);
+}
+
+/* Header y nav */
+
+header nav {
+  height: 100%;
+}
+
+header nav ul {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+nav ul li a {
+  color: white;
+  padding: 0 5px;
+}
+
+nav ul li a:hover,
+i:hover {
+  color: #c89e52;
+  text-shadow: 0px 0px 2px #c89e52;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+.linkactivo {
+  color: #c89e52;
+  text-shadow: 0px 0px 2px #c89e52;
+}
+
+#menu {
+  visibility: hidden;
+}
+
+#menu,
+label.menu {
+  display: none;
+  font-size: 4rem;
+}
+
+.listamenuesc {
+  display: none;
+}
+
+.listamenuesc i {
+  font-size: 4.5rem;
+}
+
+/* Relativo al footer */
+
+.flexfooter {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.footerulhidden {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footertext {
+  font-size: 0.77em;
+  height: 100%;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+}
+
+.iconofooter {
+  font-size: 4vh;
+  min-height: 5vh;
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+}
+
+/*Aplicado a index*/
+
+.indeximg {
+  width: 75%;
+  object-fit: cover;
+  border-radius: 100%;
+  max-width: 350px;
+}
+
+.indeximg1 {
+  z-index: 2;
+  margin-left: -150px;
+  margin-bottom: -150px;
+}
+
+.indeximg2 {
+  z-index: 1;
+  margin-left: 150px;
+}
+
+.indexplanimg {
+  width: 100%;
+}
+
+.break {
+  width: 60%;
+}
+
+/*Aplicado a Eventos*/
+
+.imgevento {
+  object-fit: cover;
+  width: 650px;
+  height: 300px;
+}
+
+.listaev li {
+  font-size: 1.4em;
+  text-align: justify;
+  padding: 0px 5px;
+}
+
+.eventosec {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+
+/*Aplicado a PyS*/
+
+.titulopys {
+  font-weight: bold;
+}
+
+.textoizq {
+  text-align: left;
+}
+
+.textoder {
+  text-align: right;
+}
+
+.textocen {
+  text-align: center;
+}
+
+.sectextopys {
+  position: relative;
+  z-index: 2;
+}
+
+.sectextopys1 {
+  margin-left: -150px;
+  padding-right: 80px;
+}
+
+.sectextopys2 {
+  margin-right: -150px;
+  padding-left: 80px;
+}
+
+.secglobalpys {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+.imgpys {
+  object-fit: cover;
+  width: 700px;
+  height: 700px;
+  border-radius: 100%;
+  opacity: 70%;
+  position: relative;
+  z-index: 1;
+}
+
+.imgpys1 {
+  margin-left: -350px;
+}
+
+.imgpys2 {
+  margin-right: -350px;
+}
+
+/*Tener en cuenta que cuanto más contenido hay en productos, hay que bajarle este margin para que no queden pegados.*/
+/* .pysserv {
+  margin-top: -100px;
+} */
+
+/*Aplica a galería*/
+
+.galerflex {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.fotog {
+  width: 300px;
+  height: 300px;
+  border-radius: 60px;
+  object-fit: cover;
+}
+
+/*Aplicado a contacto*/
+
+.contactglobal {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.formulario {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formtext {
+  width: 40%;
+  float: left;
+}
+.forminput {
+  width: 60%;
+}
+
+form input,
+form textarea {
+  background-color: #d9d9d9;
+  padding: 5px;
+  color: black;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+
+form textarea {
+  width: 80%;
+}
+
+.contactosec1 {
+  background-color: #391e4c;
+  padding: 10px;
+  width: 45%;
+  margin: 10px 20px;
+  border-radius: 60px;
+}
+
+.contactosec2 {
+  padding: 10px;
+  width: 45%;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  background-color: #614b70;
+  font-size: 1.2em;
+  margin: 0px 60px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c89e52;
+}
+
+.botonera {
+  text-align: center;
+}
+
+.linea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries para pantallas Medium + Small + menú hamburguesa */
+
+@media screen and (max-width: 768px) {
+  header {
+    overflow: visible;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+  }
+
+  .menuhamburguesa {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 18vh;
+    left: 0;
+    width: 100%;
+    background-color: #887b92;
+    height: 77vh;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    z-index: 3;
+    padding: 18px;
+  }
+
+  .logo {
+    height: 18vh;
+  }
+
+  #menu,
+  label.menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  #menu:checked ~ .menuhamburguesa {
+    display: flex;
+  }
+
+  .listamenuesc {
+    display: visible;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .flexfooter {
+    justify-content: center;
+  }
+
+  .footerulhidden {
+    display: none;
+  }
+
+  /* Cambios de tamaño de fuente */
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  p,
+  label {
+    font-size: 1rem;
+  }
+}
