@@ -366,10 +366,25 @@ form textarea {
   align-items: center;
 }
 
+/* Media Queries para pantallas > Medium, scroll */
+
+@media screen and (min-width: 769px) {
+  body,
+  header,
+  footer {
+    overflow: hidden;
+  }
+
+  main {
+    min-height: 77vh;
+    height: 77vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
 /* Media Queries para pantallas Medium + Small + menú hamburguesa */
 
 @media screen and (max-width: 768px) {
-
   header {
     overflow: visible;
   }
