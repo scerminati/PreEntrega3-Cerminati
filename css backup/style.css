@@ -267,24 +267,6 @@ footer p {
   z-index: 2;
 }
 
-.sectextopys1 {
-  margin-left: -150px;
-  padding-right: 80px;
-}
-
-.sectextopys2 {
-  margin-right: -150px;
-  padding-left: 80px;
-}
-
-.secglobalpys {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  overflow-x: hidden;
-}
-
 .imgpys {
   object-fit: cover;
   width: 700px;
@@ -301,6 +283,20 @@ footer p {
 
 .imgpys2 {
   margin-right: -350px;
+}
+
+.pysbutton {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  background-color: #614b70;
+  font-size: 1.2em;
+  margin: 0px 60px;
+  cursor: pointer;
+}
+
+.pysbutton:hover {
+  background-color: #c89e52;
 }
 
 /*Tener en cuenta que cuanto más contenido hay en productos, hay que bajarle este margin para que no queden pegados.*/

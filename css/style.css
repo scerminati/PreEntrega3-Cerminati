@@ -258,46 +258,43 @@ footer p {
   z-index: 2;
 }
 
-.sectextopys1 {
-  margin-left: -150px;
-  padding-right: 80px;
-}
-
-.sectextopys2 {
-  margin-right: -150px;
-  padding-left: 80px;
-}
-
-.secglobalpys {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  overflow-x: hidden;
-}
-
 .imgpys {
   object-fit: cover;
   width: 700px;
   height: 700px;
   border-radius: 100%;
-  opacity: 70%;
+  opacity: 50%;
   position: relative;
   z-index: 1;
 }
 
 .imgpys1 {
-  margin-left: -350px;
+  margin-left: -450px;
 }
 
 .imgpys2 {
-  margin-right: -350px;
+  margin-left: -150px;
 }
 
-/*Tener en cuenta que cuanto más contenido hay en productos, hay que bajarle este margin para que no queden pegados.*/
-/* .pysserv {
-  margin-top: -100px;
-} */
+.pysdescr {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.pysbutton {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  background-color: #391e4c;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  margin: 0 20px 20px 20px;
+}
+
+.pysbutton:hover {
+  background-color: #c89e52;
+}
 
 /*Aplica a galería*/
 
@@ -369,7 +366,7 @@ form textarea {
   text-align: center;
 }
 
-button {
+/* button {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 5px;
@@ -381,7 +378,7 @@ button {
 
 button:hover {
   background-color: #c89e52;
-}
+} */
 
 .botonera {
   text-align: center;
