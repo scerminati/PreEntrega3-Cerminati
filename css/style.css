@@ -369,6 +369,10 @@ form textarea {
 /* Media Queries para pantallas Medium + Small + menú hamburguesa */
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
   header {
     overflow: visible;
   }
