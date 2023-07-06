@@ -25,11 +25,8 @@
 
 body {
   background-color: #614b70;
-  height: 100vh;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
 }
 
 header {
@@ -41,14 +38,6 @@ header {
   display: block;
   z-index: 3;
   gap: 20px;
-  /* overflow: hidden; */
-}
-
-main {
-  /* min-height: 77vh;
-  height: 77vh; */
-  /* overflow-y: scroll;
-  overflow-x: hidden; */
 }
 
 footer {
@@ -59,7 +48,6 @@ footer {
   display: block;
   z-index: 3;
   height: 5vh;
-  /* overflow: hidden; */
 }
 
 h1 {
@@ -366,29 +354,24 @@ form textarea {
   align-items: center;
 }
 
-/* Media Queries para pantallas > Medium, scroll */
-
-@media screen and (min-width: 769px) {
-  body,
-  header,
-  footer {
-    overflow: hidden;
-  }
-
-  main {
-    min-height: 77vh;
-    height: 77vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
+.maps {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
+
+.maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+}
+
 /* Media Queries para pantallas Medium + Small + menú hamburguesa */
 
 @media screen and (max-width: 768px) {
-  header {
-    overflow: visible;
-  }
-
   header nav {
     display: flex;
     justify-content: space-between;
@@ -424,6 +407,8 @@ form textarea {
 
   #menu:checked ~ .menuhamburguesa {
     display: flex;
+    /* position: sticky;
+    top: 19vh; */
   }
 
   .listamenuesc {
@@ -466,5 +451,27 @@ form textarea {
   /* Lista en evento, cambio de fuente */
   .listaev li {
     font-size: 1em;
+  }
+}
+
+/* Media Queries para pantallas > Medium, scroll */
+
+@media screen and (min-width: 769px) {
+  body {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  body,
+  header,
+  footer {
+    overflow: hidden;
+  }
+
+  main {
+    min-height: 77vh;
+    height: 77vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
