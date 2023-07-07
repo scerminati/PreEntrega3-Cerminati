@@ -12,7 +12,7 @@
 
 /* Scrollbar para main */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -84,6 +84,10 @@ p,
 label {
   text-align: justify;
   padding: 5px 15px;
+  font-size: 1.2rem;
+}
+
+li {
   font-size: 1.2rem;
 }
 
@@ -228,8 +232,7 @@ footer p {
   height: 300px;
 }
 
-.listaev li {
-  font-size: 1.2em;
+.listaev {
   padding: 0px 5px;
 }
 
@@ -267,7 +270,7 @@ footer p {
 }
 
 .imgpys1 {
-  margin-left: -450px;
+  margin-left: -500px;
 }
 
 .imgpys2 {
@@ -452,7 +455,7 @@ form textarea {
   }
 
   p,
-  button {
+  button, li {
     font-size: 1rem;
   }
 
@@ -484,7 +487,8 @@ form textarea {
   }
 
   p,
-  button {
+  button,
+  li {
     font-size: 0.9rem;
   }
 
@@ -492,11 +496,6 @@ form textarea {
   form input,
   form textarea {
     font-size: 0.8rem;
-  }
-
-  /* Lista en evento, cambio de fuente */
-  .listaev li {
-    font-size: 1em;
   }
 }
 
