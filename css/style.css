@@ -87,7 +87,7 @@ label {
   font-size: 1.2rem;
 }
 
-li {
+main li {
   font-size: 1.2rem;
 }
 
@@ -179,7 +179,7 @@ label.menu {
 }
 
 .footertext {
-  font-size: 0.77em;
+  font-size: 0.8rem;
   height: 100%;
 }
 
@@ -401,9 +401,12 @@ form textarea {
     height: 77vh;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.4rem;
     z-index: 3;
     padding: 18px;
+  }
+
+  .menuhamburguesa li {
+    font-size: 1.4rem;
   }
 
   .logo {
@@ -427,9 +430,12 @@ form textarea {
     padding: 0;
     height: 80px;
     display: flex;
-    font-size: 1rem;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  .listamenuesc li {
+    font-size: 1rem;
   }
 
   .flexfooter {
@@ -455,7 +461,8 @@ form textarea {
   }
 
   p,
-  button, li {
+  button,
+  main li {
     font-size: 1rem;
   }
 
@@ -465,10 +472,7 @@ form textarea {
     font-size: 0.9rem;
   }
 
-  /* Lista en evento, cambio de fuente */
-  .listaev li {
-    font-size: 1rem;
-  }
+
 }
 
 /* Media Queries para pantallas Small, cambio tamaño fuente */
@@ -488,7 +492,7 @@ form textarea {
 
   p,
   button,
-  li {
+  main li {
     font-size: 0.9rem;
   }
 
