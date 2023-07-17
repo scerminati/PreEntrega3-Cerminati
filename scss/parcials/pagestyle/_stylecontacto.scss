@@ -1,0 +1,69 @@
+/*Aplicado a contacto*/
+
+.formulario {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formtext {
+  width: 40%;
+  float: left;
+}
+.forminput {
+  width: 60%;
+}
+
+form {
+  input,
+  textarea {
+    background-color: #d9d9d9;
+    padding: 5px;
+    color: black;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $sizeform;
+  }
+  textarea {
+    width: 80%;
+  }
+}
+
+.contactosec1 {
+  background-color: #391e4c;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.contactobut {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  background-color: #614b70;
+  margin: 0px 60px;
+  cursor: pointer;
+  &:hover {
+    background-color: #c89e52;
+  }
+}
+
+.linea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maps {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+  }
+}

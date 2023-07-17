@@ -1,0 +1,162 @@
+body {
+  background-color: #614b70;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  overflow-x: hidden;
+}
+main li {
+  font-size: 1.2rem;
+}
+
+header {
+  background-color: #391e4c;
+  position: sticky;
+  top: 0;
+  font-size: 2vw;
+  height: 18vh;
+  display: block;
+  z-index: 3;
+  gap: 20px;
+}
+header nav {
+  height: 100%;
+}
+header nav ul {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  color: white;
+  padding: 0 5px;
+}
+header nav ul li a:hover {
+  color: #c89e52;
+  text-shadow: 0px 0px 2px #c89e52;
+}
+
+footer {
+  background-color: #391e4c;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  z-index: 3;
+  height: 5vh;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  text-align: center;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+label {
+  text-align: justify;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+}
+
+button {
+  font-size: 1.2rem;
+}
+
+.logo {
+  height: 100%;
+  float: left;
+  margin-left: 20px;
+  align-self: center;
+}
+.logo:hover {
+  filter: drop-shadow(0px 0px 5px white);
+}
+
+/*Relativo al nav y header*/
+.linkactivo {
+  color: #c89e52;
+  text-shadow: 0px 0px 2px #c89e52;
+}
+
+#menu {
+  visibility: hidden;
+}
+
+#menu,
+label.menu {
+  display: none;
+  font-size: 4rem;
+}
+
+.listamenuesc {
+  display: none;
+}
+
+.listamenuesc i {
+  font-size: 4rem;
+}
+
+/* Relativo al footer */
+.flexfooter {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.footerulhidden {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footertext {
+  font-size: 0.8rem;
+  height: 100%;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+}
+
+.iconofooter {
+  font-size: 4vh;
+  min-height: 5vh;
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=general.css.map */

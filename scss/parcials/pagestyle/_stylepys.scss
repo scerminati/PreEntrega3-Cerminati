@@ -1,0 +1,59 @@
+/*Aplicado a PyS*/
+
+.titulopys {
+  font-weight: bold;
+}
+
+.textoizq {
+  text-align: left;
+}
+
+.textoder {
+  text-align: right;
+}
+
+.textocen {
+  text-align: center;
+}
+
+.sectextopys {
+  position: relative;
+  z-index: 2;
+}
+
+.imgpys {
+  object-fit: cover;
+  width: 700px;
+  height: 700px;
+  border-radius: 100%;
+  opacity: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.imgpys1 {
+  margin-left: -500px;
+}
+
+.imgpys2 {
+  margin-left: -150px;
+}
+
+.pysdescr {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.pysbutton {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  background-color: #391e4c;
+  cursor: pointer;
+  border: none;
+  margin: 0 20px 20px 20px;
+}
+
+.pysbutton:hover {
+  background-color: #c89e52;
+}

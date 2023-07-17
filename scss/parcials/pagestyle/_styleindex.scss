@@ -1,0 +1,27 @@
+/*Aplicado a index*/
+
+.indeximg {
+    width: 75%;
+    object-fit: cover;
+    border-radius: 100%;
+    max-width: 350px;
+  }
+  
+  .indeximg1 {
+    z-index: 2;
+    margin-left: -150px;
+    margin-bottom: -150px;
+  }
+  
+  .indeximg2 {
+    z-index: 1;
+    margin-left: 150px;
+  }
+  
+  .indexplanimg {
+    width: 100%;
+  }
+  
+  .break {
+    width: 60%;
+  }

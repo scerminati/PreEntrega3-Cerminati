@@ -1,0 +1,15 @@
+/*Importe de estilos generales*/
+@import "./parcials/reset";
+@import "./parcials/variables";
+@import "./parcials/scrollbar";
+@import "./parcials/general";
+
+/*Importe de características de páginas individuales*/
+@import "./parcials/pagestyle/styleindex";
+@import "./parcials/pagestyle/styleeventos";
+@import "./parcials/pagestyle/stylepys";
+@import "./parcials/pagestyle/stylegaleria";
+@import "./parcials/pagestyle/stylecontacto";
+
+/*Importe de media queries*/
+@import "./parcials/mediaqueries";

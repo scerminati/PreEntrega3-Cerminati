@@ -1,0 +1,14 @@
+/* Scrollbar para main */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #391e4c;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+  }

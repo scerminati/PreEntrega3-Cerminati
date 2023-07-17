@@ -1,0 +1,166 @@
+body {
+  background-color: #614b70;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  overflow-x: hidden;
+  li {
+    font-size: $sizep;
+  }
+}
+
+header {
+  background-color: #391e4c;
+  position: sticky;
+  top: 0;
+  font-size: 2vw;
+  height: 18vh;
+  display: block;
+  z-index: 3;
+  gap: 20px;
+  nav {
+    height: 100%;
+    ul {
+      height: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 5px;
+      li {
+        list-style-type: none;
+        a {
+          color: white;
+          padding: 0 5px;
+          &:hover {
+            color: #c89e52;
+            text-shadow: 0px 0px 2px #c89e52;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #391e4c;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  z-index: 3;
+  height: 5vh;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: $sizeh1;
+  text-align: center;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: $sizeh2;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: $sizeh3;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+label {
+  text-align: justify;
+  padding: 5px 15px;
+  font-size: $sizep;
+}
+
+button {
+  font-size: $sizep;
+}
+
+.logo {
+  height: 100%;
+  float: left;
+  margin-left: 20px;
+  align-self: center;
+  &:hover {
+    filter: drop-shadow(0px 0px 5px white);
+  }
+}
+
+/*Relativo al nav y header*/
+
+i:hover {
+  color: #c89e52;
+  text-shadow: 0px 0px 2px #c89e52;
+}
+
+.linkactivo {
+  color: #c89e52;
+  text-shadow: 0px 0px 2px #c89e52;
+}
+
+#menu {
+  visibility: hidden;
+}
+
+#menu,
+label.menu {
+  display: none;
+  font-size: $sizeh1;
+}
+
+.listamenuesc {
+  display: none;
+  i {
+    font-size: $sizeh1;
+  }
+}
+
+/* Relativo al footer */
+
+.flexfooter {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.footerulhidden {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footertext {
+  font-size: $sizefot;
+  height: 100%;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+}
+
+.iconofooter {
+  font-size: 4vh;
+  min-height: 5vh;
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+}

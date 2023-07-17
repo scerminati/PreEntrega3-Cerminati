@@ -1,0 +1,138 @@
+/* Media Queries para pantallas Medium + Small + menú hamburguesa */
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+  }
+
+  .menuhamburguesa {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 18vh;
+    left: 0;
+    width: 100%;
+    background-color: #887b92;
+    height: 77vh;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 3;
+    padding: 18px;
+    li {
+      font-size: 1.4rem;
+    }
+  }
+
+  .logo {
+    height: 18vh;
+  }
+
+  #menu,
+  label.menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  #menu:checked ~ .menuhamburguesa {
+    display: flex;
+  }
+
+  .listamenuesc {
+    display: visible;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    li {
+      font-size: 1rem;
+    }
+  }
+
+  .flexfooter {
+    justify-content: center;
+  }
+
+  .footerulhidden {
+    display: none;
+  }
+
+  /* Cambios de tamaño de fuente */
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  p,
+  button,
+  main li {
+    font-size: 1rem;
+  }
+
+  label,
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+/* Media Queries para pantallas Small, cambio tamaño fuente */
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p,
+  button,
+  main li {
+    font-size: 0.9rem;
+  }
+
+  label,
+  form input,
+  form textarea {
+    font-size: 0.8rem;
+  }
+}
+
+/* Media Queries para pantallas Large, scroll */
+
+@media screen and (min-width: 769px) {
+  body {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  body,
+  header,
+  footer {
+    overflow: hidden;
+  }
+
+  main {
+    min-height: 77vh;
+    height: 77vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
