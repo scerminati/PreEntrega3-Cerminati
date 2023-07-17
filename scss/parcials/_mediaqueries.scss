@@ -9,7 +9,7 @@
   }
 
   .menuhamburguesa {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 18vh;
@@ -21,6 +21,12 @@
     align-items: center;
     z-index: 3;
     padding: 18px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounceOutRight;
+    animation-name: bounceOutRight;
     li {
       font-size: 1.4rem;
     }
@@ -37,8 +43,14 @@
   }
 
   #menu:checked ~ .menuhamburguesa {
-    display: flex;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
   }
+
 
   .listamenuesc {
     display: visible;
@@ -136,3 +148,5 @@
     overflow-x: hidden;
   }
 }
+
+@import "./animacion";
