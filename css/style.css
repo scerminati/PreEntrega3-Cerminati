@@ -351,25 +351,40 @@ form textarea {
   align-items: center;
 }
 
-.maps {
+.maps, .insta {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
-.maps iframe {
+.maps iframe, .insta iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 95%;
-  height: 95%;
+  height: 75%;
+}
+
+.insta {
+  margin-bottom: -80px;
+}
+
+.breakinv {
+  display: none;
 }
 
 /*Importe de media queries*/
 /*Media Queries para acomodar tamaño fuente del menú superior en vista Desktop - Tablet*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   header {
     font-size: 1.125rem;
+  }
+  .breakinv {
+    display: block;
+    margin: 10px;
+  }
+  .maps, .insta {
+    margin-bottom: -70px;
   }
 }
 /* Media Queries para pantallas Medium + Small + menú hamburguesa */
@@ -451,27 +466,34 @@ form textarea {
   form textarea {
     font-size: 0.88rem;
   }
+  .insta {
+    margin-bottom: 0px;
+  }
+  .insta iframe {
+    width: 95%;
+    height: 95%;
+  }
 }
 /* Media Queries para pantallas Small, cambio tamaño fuente */
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 2.94rem;
+    font-size: 2.975rem;
   }
   h2 {
-    font-size: 2.52rem;
+    font-size: 2.55rem;
   }
   h3 {
-    font-size: 1.932rem;
+    font-size: 1.955rem;
   }
   p,
   button,
   main li {
-    font-size: 1.008rem;
+    font-size: 1.02rem;
   }
   label,
   form input,
   form textarea {
-    font-size: 0.84rem;
+    font-size: 0.85rem;
   }
 }
 /* Media Queries para pantallas Large, scroll */

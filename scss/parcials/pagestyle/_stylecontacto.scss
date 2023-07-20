@@ -64,6 +64,15 @@ form {
     top: 0;
     left: 0;
     width: 95%;
-    height: 95%;
+    height: 75%;
   }
+}
+
+.insta {
+  margin-bottom: -80px;
+  @extend .maps;
+}
+
+.breakinv {
+  display: none;
 }

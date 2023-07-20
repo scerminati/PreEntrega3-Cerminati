@@ -1,8 +1,15 @@
 /*Media Queries para acomodar tamaño fuente del menú superior en vista Desktop - Tablet*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   header {
     font-size: $sizeheader * $ajustelg;
+  }
+  .breakinv {
+    display: block;
+    margin: 10px;
+  }
+  .maps {
+    margin-bottom: -70px;
   }
 }
 
@@ -98,6 +105,16 @@
   form input,
   form textarea {
     font-size: $sizeform * $ajustemd;
+  }
+
+ 
+
+  .insta {
+    margin-bottom: 0px;
+    iframe {
+      width: 95%;
+      height: 95%;
+    }
   }
 }
 
