@@ -1,11 +1,15 @@
-/*Variables de fuente*/
-
-/*Fuente de títulos*/
+/*Tamaño fuente de títulos*/
 $sizeh1: 3.5rem;
 $sizeh2: $sizeh1 - 0.5;
 $sizeh3: $sizeh1 - 1.2;
 
-/*Fuente de texto*/
+/*Tamaño fuente de texto*/
 $sizep: 1.2rem;
 $sizeform: $sizep - 0.2;
 $sizefot: $sizep - 0.4;
+$sizeheader: 1.5rem;
+
+/*Ajuste en porcentaje para pantallas Large, Medium y Small*/
+$ajustelg: 0.75;
+$ajustemd: 0.88;
+$ajustesm: 0.84;

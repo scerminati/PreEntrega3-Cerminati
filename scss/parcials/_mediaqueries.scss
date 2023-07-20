@@ -1,3 +1,11 @@
+/*Media Queries para acomodar tamaño fuente del menú superior en vista Desktop - Tablet*/
+
+@media screen and (max-width: 1000px) {
+  header {
+    font-size: $sizeheader * $ajustelg;
+  }
+}
+
 /* Media Queries para pantallas Medium + Small + menú hamburguesa */
 
 @media screen and (max-width: 768px) {
@@ -13,7 +21,7 @@
     flex-direction: column;
     position: absolute;
     top: 18vh;
-    left: 0;
+    left: 100%;
     width: 100%;
     background-color: #887b92;
     height: 77vh;
@@ -21,14 +29,9 @@
     align-items: center;
     z-index: 3;
     padding: 18px;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: bounceOutRight;
-    animation-name: bounceOutRight;
+
     li {
-      font-size: 1.4rem;
+      font-size: $sizeheader * 0.9;
     }
   }
 
@@ -43,6 +46,7 @@
   }
 
   #menu:checked ~ .menuhamburguesa {
+    left: 0;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -50,7 +54,6 @@
     -webkit-animation-name: bounceInRight;
     animation-name: bounceInRight;
   }
-
 
   .listamenuesc {
     display: visible;
@@ -60,7 +63,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     li {
-      font-size: 1rem;
+      font-size: $sizeform;
     }
   }
 
@@ -73,29 +76,28 @@
   }
 
   /* Cambios de tamaño de fuente */
-
   h1 {
-    font-size: 3.2rem;
+    font-size: $sizeh1 * $ajustemd;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: $sizeh2 * $ajustemd;
   }
 
   h3 {
-    font-size: 1.7rem;
+    font-size: $sizeh3 * $ajustemd;
   }
 
   p,
   button,
   main li {
-    font-size: 1rem;
+    font-size: $sizep * $ajustemd;
   }
 
   label,
   form input,
   form textarea {
-    font-size: 0.9rem;
+    font-size: $sizeform * $ajustemd;
   }
 }
 
@@ -103,27 +105,27 @@
 
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: $sizeh1 * $ajustesm;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: $sizeh2 * $ajustesm;
   }
 
   h3 {
-    font-size: 1.3rem;
+    font-size: $sizeh3 * $ajustesm;
   }
 
   p,
   button,
   main li {
-    font-size: 0.9rem;
+    font-size: $sizep * $ajustesm;
   }
 
   label,
   form input,
   form textarea {
-    font-size: 0.8rem;
+    font-size: $sizeform * $ajustesm;
   }
 }
 

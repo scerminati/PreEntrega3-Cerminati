@@ -15,11 +15,11 @@ header {
   background-color: #391e4c;
   position: sticky;
   top: 0;
-  font-size: 2vw;
+  font-size: $sizeheader;
   height: 18vh;
   display: block;
   z-index: 3;
-  gap: 20px;
+  gap: 10px;
   nav {
     height: 100%;
     ul {
@@ -29,7 +29,7 @@ header {
       align-items: center;
       flex-direction: row;
       justify-content: space-evenly;
-      gap: 5px;
+      gap: 20px;
       li {
         list-style-type: none;
         a {
