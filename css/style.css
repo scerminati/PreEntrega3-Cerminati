@@ -370,7 +370,7 @@ form textarea {
 }
 
 .contactosec1 {
-  background-color: #391e4c;
+  background-color: rgba(57, 30, 76, 0.7);
   padding: 5px;
   border-radius: 30px;
 }
@@ -442,7 +442,7 @@ form textarea {
     align-items: center;
   }
   .menuhamburguesa {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 18vh;
@@ -467,6 +467,7 @@ form textarea {
     cursor: pointer;
   }
   #menu:checked ~ .menuhamburguesa {
+    display: flex;
     left: 0;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
