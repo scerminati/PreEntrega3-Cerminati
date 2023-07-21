@@ -27,8 +27,25 @@
   text-align: center;
   vertical-align: middle;
   border-radius: 30px;
-  color: white;
   visibility: hidden;
   background: rgba(23, 11, 36, 0.5);
   font-size: 1rem;
+}
+
+.videowrap {
+  height: auto;
+
+  &:hover .videodescr {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.videodescr {
+  display: block;
+  font-size: 1rem;
+  visibility: hidden;
+  width: 450px;
+  border-radius: 30px;
+  background: rgba(23, 11, 36, 0.5);
 }
