@@ -323,7 +323,7 @@ footer p {
 
 .videowrap {
   height: auto;
-  width: 100%;
+  width: 90%;
 }
 .videowrap:hover .videodescr {
   visibility: visible;
