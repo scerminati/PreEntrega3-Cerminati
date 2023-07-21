@@ -28,12 +28,13 @@
   vertical-align: middle;
   border-radius: 30px;
   visibility: hidden;
-  background: rgba(23, 11, 36, 0.5);
-  font-size: 1rem;
+  background: rgba(57, 30, 76, 0.7);
+  font-size: 0.9rem;
 }
 
 .videowrap {
   height: auto;
+  width: 100%;
 
   &:hover .videodescr {
     visibility: visible;
@@ -43,9 +44,9 @@
 
 .videodescr {
   display: block;
-  font-size: 1rem;
+  font-size: 0.9rem;
   visibility: hidden;
-  width: 450px;
+  width: 100%;
   border-radius: 30px;
-  background: rgba(23, 11, 36, 0.5);
+  background: rgba(57, 30, 76, 0.7);
 }

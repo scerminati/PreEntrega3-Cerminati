@@ -107,8 +107,24 @@
     font-size: $sizeform * $ajustemd;
   }
 
- 
+  /*Modificados los hovers de galería*/
+  .fotowrap {
+    height: auto;
+  }
+  .fotodescr {
+    margin-top: 5px;
+    height: auto;
+    width: auto;
+    position: relative;
+    display: block;
+    visibility: visible;
+  }
 
+  .videodescr {
+    visibility: visible;
+  }
+
+  /*Modificado el iframe de instagram en contactos*/
   .insta {
     margin-bottom: 0px;
     iframe {
@@ -167,5 +183,3 @@
     overflow-x: hidden;
   }
 }
-
-

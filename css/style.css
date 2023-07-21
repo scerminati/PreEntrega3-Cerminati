@@ -317,12 +317,13 @@ footer p {
   vertical-align: middle;
   border-radius: 30px;
   visibility: hidden;
-  background: rgba(23, 11, 36, 0.5);
-  font-size: 1rem;
+  background: rgba(57, 30, 76, 0.7);
+  font-size: 0.9rem;
 }
 
 .videowrap {
   height: auto;
+  width: 100%;
 }
 .videowrap:hover .videodescr {
   visibility: visible;
@@ -331,11 +332,11 @@ footer p {
 
 .videodescr {
   display: block;
-  font-size: 1rem;
+  font-size: 0.9rem;
   visibility: hidden;
-  width: 450px;
+  width: 100%;
   border-radius: 30px;
-  background: rgba(23, 11, 36, 0.5);
+  background: rgba(57, 30, 76, 0.7);
 }
 
 /*Aplicado a contacto*/
@@ -507,6 +508,22 @@ form textarea {
   form textarea {
     font-size: 0.88rem;
   }
+  /*Modificados los hovers de galería*/
+  .fotowrap {
+    height: auto;
+  }
+  .fotodescr {
+    margin-top: 5px;
+    height: auto;
+    width: auto;
+    position: relative;
+    display: block;
+    visibility: visible;
+  }
+  .videodescr {
+    visibility: visible;
+  }
+  /*Modificado el iframe de instagram en contactos*/
   .insta {
     margin-bottom: 0px;
   }
