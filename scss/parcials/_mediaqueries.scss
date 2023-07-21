@@ -22,7 +22,7 @@
   }
 
   header nav {
-    display: flex;
+    @include flexmix(row);
     justify-content: space-between;
     padding: 0 40px;
     align-items: center;
@@ -30,7 +30,6 @@
 
   .menuhamburguesa {
     display: none;
-    flex-direction: column;
     position: absolute;
     top: 18vh;
     left: 100%;
@@ -58,7 +57,7 @@
   }
 
   #menu:checked ~ .menuhamburguesa {
-    display:flex;
+    @include flexmix(column);
     left: 0;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -72,8 +71,7 @@
     display: visible;
     padding: 0;
     height: 80px;
-    display: flex;
-    flex-direction: column;
+    @include flexmix(column);
     justify-content: space-evenly;
     li {
       font-size: $sizeform;

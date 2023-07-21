@@ -1,0 +1,6 @@
+/*Mixin para display flex y column o row*/
+
+@mixin flexmix($display) {
+  display: flex;
+  flex-direction: $display;
+}

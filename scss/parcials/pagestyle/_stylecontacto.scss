@@ -1,9 +1,8 @@
 /*Aplicado a contacto*/
 
 .formulario {
-  display: flex;
+  @include flexmix(column);
   justify-content: space-evenly;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -49,7 +48,7 @@ form {
 }
 
 .linea {
-  display: flex;
+  @include flexmix(row);
   justify-content: center;
   align-items: center;
 }
