@@ -1,3 +1,5 @@
+/*Animación para menú*/
+
 @-webkit-keyframes bounceInRight {
   from,
   60%,
@@ -73,33 +75,3 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
-
-
-@-webkit-keyframes bounceOutRight {
-    20% {
-      opacity: 1;
-      -webkit-transform: translate3d(-20px, 0, 0);
-      transform: translate3d(-20px, 0, 0);
-    }
-  
-    to {
-      opacity: 0;
-      -webkit-transform: translate3d(2000px, 0, 0);
-      transform: translate3d(2000px, 0, 0);
-    }
-  }
-  
-  @keyframes bounceOutRight {
-    20% {
-      opacity: 1;
-      -webkit-transform: translate3d(-20px, 0, 0);
-      transform: translate3d(-20px, 0, 0);
-    }
-  
-    to {
-      opacity: 0;
-      -webkit-transform: translate3d(2000px, 0, 0);
-      transform: translate3d(2000px, 0, 0);
-    }
-  }
