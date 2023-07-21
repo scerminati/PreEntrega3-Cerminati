@@ -431,6 +431,9 @@ form textarea {
 }
 /* Media Queries para pantallas Medium + Small + menú hamburguesa */
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   header nav {
     display: flex;
     justify-content: space-between;
